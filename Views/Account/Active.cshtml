@@ -1,0 +1,30 @@
+﻿<html>
+<head>
+    <title>Active</title>
+</head>
+
+<body>
+    <h3>Active</h3>
+    @ViewBag.msg
+    <form method="post">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td>@ViewBag.username</td>
+            </tr>
+            <tr>
+                <td>Security Code</td>
+                <td><input type="text" name="securityCode" /></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" value="Active" asp-controller="Account" asp-action="Active" />
+                    <input type="submit" value="Resend" asp-controller="Account" asp-action="Resend" />
+                </td>
+
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
